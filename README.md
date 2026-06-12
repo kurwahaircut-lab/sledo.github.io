@@ -1,2 +1,0 @@
-# sledo.github.io
-sledo
