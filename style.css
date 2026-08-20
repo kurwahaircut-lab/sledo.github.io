@@ -7,7 +7,7 @@
     --text: #1a1a1a;
     --muted: #8a8a84;
     --border: #d6d6d0;
-    --gold: #b8973a;
+    --gold: #ffd000;
     --tag-bg: #efefeb;
   }
 
@@ -43,8 +43,8 @@
      HERO
   ═══════════════════════════════════ */
   .hero {
-    background: #141414;
-    color: white;
+    background: #ffd000;
+    color: #141414;
     text-align: center;
     padding: 90px 40px 80px;
     position: relative;
@@ -53,20 +53,20 @@
   .hero::before {
     content: '';
     position: absolute; inset: 0;
-    background: radial-gradient(ellipse 80% 60% at 50% 100%, rgba(184,151,58,0.12) 0%, transparent 70%);
+    background: radial-gradient(ellipse 80% 60% at 50% 100%, rgba(0,0,0,0.06) 0%, transparent 70%);
   }
   .hero-eyebrow {
     font-size: 10px; letter-spacing: .2em; text-transform: uppercase;
-    color: var(--gold); margin-bottom: 20px; position: relative;
+    color: #141414; opacity: .55; margin-bottom: 20px; position: relative;
   }
   .hero h1 {
     font-size: clamp(36px, 6vw, 64px);
     font-weight: 200; letter-spacing: -.02em;
     line-height: 1.1; margin-bottom: 20px; position: relative;
   }
-  .hero h1 em { font-style: normal; color: var(--gold); }
+  .hero h1 em { font-style: normal; color: #141414; }
   .hero-sub {
-    font-size: 13px; color: rgba(255,255,255,0.45);
+    font-size: 13px; color: rgba(20,20,20,0.55);
     letter-spacing: .06em; text-transform: uppercase;
     position: relative;
   }
@@ -76,9 +76,9 @@
   }
   .hero-divider::before, .hero-divider::after {
     content: ''; flex: 1; max-width: 120px;
-    height: 1px; background: rgba(184,151,58,0.35);
+    height: 1px; background: rgba(20,20,20,0.3);
   }
-  .hero-divider span { font-size: 10px; color: var(--gold); letter-spacing: .15em; }
+  .hero-divider span { font-size: 10px; color: #141414; opacity: .7; letter-spacing: .15em; }
 
   /* ═══════════════════════════════════
      CATALOGUE NAV (pills)
